@@ -11,7 +11,7 @@ jobs:
         run: npm install -g playwright@1.52.0
 
       - name: Trigger SedStart test run
-        uses: sedstart/runlocal@v1
+        uses: sedstart/runlocal@integration
         with:
           api_key: ${{ secrets.SEDSTART_API_KEY_QA }}
           project_id: 444
